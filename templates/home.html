@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+<style>
+    body{
+    background-image: url("../static/background2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    }
+</style>
+</head>
+
+<body >
+<center>
+    <div class="text"> 
+        <center> <h1> <font color="white" font-family="leen" > Love knows No Rules </h1></font> </center> 
+        <center><h2> <font color="white"> Let's share and read some stories!</h2> </font> </center>
+    </div></center> 
+    <center><a  style="font-size: 40px; margin-top: 400px;" href='/newsfeed' type="button" class="btn btn-info btn-lg" id="Button" onclick="">GET STARTED </a></center>
+    
+        <script>
+            $(document).ready(function(){
+                $("#Button").click(function(){
+                    $("#Modal").modal();
+                });
+                $("#info").click(function() {
+                    $("#ModalInfo").modal();
+                })
+            });
+
+        </script>
+        </body>
+        </html>

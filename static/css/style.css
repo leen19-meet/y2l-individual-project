@@ -1,0 +1,19 @@
+.fixed{ 
+    position:fixed;
+}
+
+.button{
+    font-size: 20px;
+    position:fixed;
+    bottom: 0px;
+    right:0px;
+}
+
+body{
+    font-family: leen; 
+}
+
+@font-face{
+    font-family: leen;
+    src: url("roman_font_7.ttf");
+}

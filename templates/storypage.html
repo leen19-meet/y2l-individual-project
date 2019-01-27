@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+        <style>
+                body{
+            background-image: url("../static/background2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100%;
+            width: 100%;
+            } 
+        </style>
+</head>
+<body>
+        <center> <div  id="adding"  style = "  background-color: #f2fbfb; height: 530px; width: 550px; border: 1px solid black; padding: 50px; margin: 25px;">
+
+        <h1>{{story.title}}</h1>
+                
+            <center> <img src = {{story.picture}} width="250" height="250"> </center>
+                <br> 
+                <br>
+                <br>
+        <h10> {{story.content}} </h10>
+            </div>
+        </center>
+        <form action="/newsfeed" method = 'get'> 
+        <!-- <input style="display: none" class="button" type="submit" value = 'previous' >  -->
+        <input style="font-size: 20px; position:fixed; bottom: 0px; right:0px;" type="submit" class="btn btn-info btn-lg" value = 'previous' id="Button">
+        </form>
+        
+</body>
